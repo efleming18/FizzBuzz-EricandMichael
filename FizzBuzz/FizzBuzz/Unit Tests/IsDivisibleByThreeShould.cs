@@ -21,5 +21,16 @@ namespace FizzBuzz.Unit_Tests
             Assert.AreEqual(expectedValue, actualValue);
 
         }
+
+        [Test]
+        public void ReturnFalseIfNumberIsNotDivisibleByThree()
+        {
+            var fizzBuzz = new FizzBuzz();
+            var expectedValue = false;
+
+            var actualValue = fizzBuzz.IsDivisibleByThree();
+
+            Assert.AreEqual(expectedValue, actualValue);
+        }
     }
 }
