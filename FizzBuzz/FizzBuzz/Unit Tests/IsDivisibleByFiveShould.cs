@@ -8,22 +8,22 @@ using System.Threading.Tasks;
 namespace FizzBuzz.Unit_Tests
 {
     [TestFixture]
-    class IsDivisibleByThreeShould
+    class IsDivisibleByFiveShould
     {
         private FizzBuzz fizzBuzz = new FizzBuzz();
 
         [Test]
-        public void ReturnTrueIfNumberIsDivisibleByThree()
+        public void ReturnTrueIfNumberDivisibleByFive()
         {
-            var num = 15;
-            Assert.IsTrue(fizzBuzz.IsDivisibleByThree(num));
+            var num = 5;
+            Assert.IsTrue(fizzBuzz.IsDivisibleByFive(num));
         }
 
         [Test]
-        public void ReturnFalseIfNumberIsNotDivisibleByThree()
+        public void ReturnFalseIfNumberNotDivisibleByFive()
         {
-            var num = 5;
-            Assert.IsFalse(fizzBuzz.IsDivisibleByThree(num));
+            var num = 3;
+            Assert.IsFalse(fizzBuzz.IsDivisibleByFive(num));
         }
     }
 }
