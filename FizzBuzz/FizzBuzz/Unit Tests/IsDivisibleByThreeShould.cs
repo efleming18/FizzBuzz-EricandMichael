@@ -16,7 +16,8 @@ namespace FizzBuzz.Unit_Tests
             var fizzBuzz = new FizzBuzz();
             var expectedValue = true;
 
-            var actualValue = fizzBuzz.IsDivisibleByThree();
+            var num = 15;
+            var actualValue = fizzBuzz.IsDivisibleByThree(num);
 
             Assert.AreEqual(expectedValue, actualValue);
 
@@ -28,7 +29,8 @@ namespace FizzBuzz.Unit_Tests
             var fizzBuzz = new FizzBuzz();
             var expectedValue = false;
 
-            var actualValue = fizzBuzz.IsDivisibleByThree();
+            var num = 5;
+            var actualValue = fizzBuzz.IsDivisibleByThree(num);
 
             Assert.AreEqual(expectedValue, actualValue);
         }

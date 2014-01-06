@@ -8,9 +8,9 @@ namespace FizzBuzz
 {
     class FizzBuzz
     {
-        public object IsDivisibleByThree()
+        public object IsDivisibleByThree(int num)
         {
-            return true;
+            return num % 3 == 0;
         }
     }
 }
